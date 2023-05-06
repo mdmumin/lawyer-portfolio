@@ -1,0 +1,44 @@
+@import "../abstracts/variables";
+@import "../mixins/common";
+body{
+    margin: 0;
+}
+div,
+section,
+form,
+ul,
+ol,
+p,
+h1,h2,h3,h4,h5,h6{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    @include tr();
+    font-family: $poppins;
+
+}
+
+h1,h2,h3,h4,h5,h6{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    @include tr();
+    font-family: $playfair;
+
+}
+
+ul,
+ol{
+    list-style: none;
+}
+// a {
+//     text-decoration: none;
+// }
+
+a,
+span,
+i {
+    display: inline-block;
+    @include tr();
+    font-family: $poppins;
+}

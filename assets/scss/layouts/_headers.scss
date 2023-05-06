@@ -1,9 +1,86 @@
 @import "../abstracts/variables";
 @import "../mixins/common";
 @import "../mixins/responsive";
-header{
-    background-color: gray;
-    padding: 40px 0px;
 
-    @include tr();
+header {
+    .header_content {
+        .logo {
+            img {
+                height: 36px;
+            }
+        }
+
+        nav {
+            border: $border;
+            padding: 32px 0px;
+
+            @include custom_responsive(0px, 767.9px) {
+                position: relative;
+            }
+
+            .nav_toggle_btn {
+                display: none;
+                border: none;
+                background-color: $brand_deep;
+                color: $white;
+                padding: 10px;
+                float: right;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: $brand_light;
+                }
+
+                @include custom_responsive(0px, 767.9px) {
+                    display: block;
+                }
+            }
+
+            ul {
+                gap: 56px;
+                justify-content: flex-end;
+
+                @include custom_responsive(0px, 767.9px) {
+                    position: absolute;
+                    top: 100%;
+                    right: -31px;
+                    background-color: $brand_deep;
+                    height: calc(100vh - 66px);
+                    width: 70vw;
+                    gap: 20px;
+                    -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    text-align: center;
+                    z-index: 999999;
+                }
+
+                li {
+                    a {
+                        color: black;
+
+                        @include custom_responsive(0px, 767.9px) {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .search {
+            button {
+
+                @include custom_responsive(0px, 767.9px) {
+                    border: 0;
+                    background: transparent;
+                    cursor: pointer;
+                }
+
+                i {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }

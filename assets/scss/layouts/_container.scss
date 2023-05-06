@@ -1,0 +1,34 @@
+@import "../abstracts/variables";
+@import "../mixins/responsive";
+@import "../mixins/common";
+
+.container {
+    width: 1400px;
+    margin: auto;
+     @include border(red);
+
+    @include xs() {
+        width: 95%;
+    }
+
+    @include sm() {
+        width: 576px;
+    }
+
+    @include md() {
+        width: 768px;
+    }
+
+    @include lg() {
+        width: 992;
+    }
+
+    @include xl() {
+        width: 1200px;
+    }
+}
+
+.container-fluid {
+    width: 95%;
+    margin: auto;
+}

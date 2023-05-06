@@ -1,0 +1,68 @@
+#service {
+    .service_content {
+        display: flex;
+        flex: 50%;
+
+        .content_left {
+            margin: 240px 0px 321px 0px;
+
+            h2 {
+                font-family: $playfair;
+                font-weight: 700;
+                font-size: 48px;
+                letter-spacing: 0.323077px;
+                color: #2D2F30;
+            }
+
+            p {
+                padding-top: 30px;
+                font-family: $poppins;
+                font-weight: 400;
+                font-size: 20px;
+                letter-spacing: 0.5px;
+                color: $gray;
+
+            }
+        }
+
+        .content_right {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-content: flex-start;
+            gap: 26px;
+            margin: 126px;
+            margin-right: 256px;
+
+
+            div {
+                margin: 24px;
+
+                img {}
+
+                h3 {
+                    padding-top: 18px;
+                    font-family: $playfair;
+                    font-weight: 700;
+                    font-size: 22px;
+                    line-height: 22px;
+                    color: #363940;
+
+                }
+
+                p {
+                    padding-top: 10px;
+                    font-family: 'Plus Jakarta Sans';
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 24px;
+                    align-items: center;
+                    letter-spacing: 0.3px;
+                    color: #8B8C8C;
+
+
+                }
+            }
+
+        }
+    }
+}

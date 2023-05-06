@@ -1,0 +1,51 @@
+#count {
+    .count_content {
+        background-color: #094B72;
+
+        .count_content_top {
+            h2 {
+                font-family: $playfair;
+                font-weight: 900;
+                text-align: center;
+                font-size: 48px;
+                color: $white;
+                padding-top: 53px;
+            }
+
+            p {
+                font-family: $poppins;
+                font-weight: 400;
+                font-size: 18px;
+                text-align: center;
+                color: $white;
+                padding-top: 8px;
+            }
+        }
+
+        .count_content_bottom {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+            align-content: flex-start;
+            justify-content: center;
+            padding: 48px 307px 55px 307px;
+
+            h4 {
+                font-family: $poppins;
+                font-weight: 800;
+                font-size: 48px;
+                text-align: center;
+                color: $white;
+            }
+
+            p {
+                font-family: $poppins;
+                font-size: 18px;
+                text-align: center;
+                font-feature-settings: 'salt' on, 'liga' off;
+                color: $white;
+            }
+
+        }
+    }
+}

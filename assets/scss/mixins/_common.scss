@@ -1,3 +1,9 @@
-@mixin tr($tr: .3s){
+@mixin tr($tr: .3s) {
     transition-duration: $tr;
+}
+
+@mixin border($color: black, $border_style: solid, $border_width: 1px){
+    border-width: $border_width;
+    border-style: $border_style;
+    border-color: $color;
 }

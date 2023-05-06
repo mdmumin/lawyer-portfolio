@@ -1,0 +1,70 @@
+#banner {
+    .banner_content {
+        background-image: url("../images/banner.png");
+        background-repeat: no-repeat;
+        background-position: 800px;
+        padding-top: 150px;
+        padding-bottom: 46px;
+        // margin-right: 50px;
+
+        .content_top {
+            width: 60%;
+            // margin-top: 150px;
+
+            h1 {
+                font-weight: 700;
+                font-size: 90px;
+                letter-spacing: 0.02em;
+                color: $brand_deep;
+
+            }
+
+            p {
+                font-weight: 500;
+                font-size: 24px;
+                letter-spacing: 0.5px;
+                color: $gray;
+                margin-top: 46px;
+                margin-bottom: 42px;
+
+            }
+
+            a {
+                padding: 29px 36px;
+                background: #094B72;
+                border-radius: 8px;
+                color: $white;
+                text-transform: uppercase;
+            }
+        }
+
+        .content_bottom {
+            width: 60%;
+            margin-top: 125px;
+
+            h4 {
+                font-size: 22px;
+                letter-spacing: 0.04em;
+                color: $gray;
+                font-family: $poppins;
+                font-weight: 400;
+                margin-bottom: 34px;
+
+            }
+
+            ul {
+                display: grid;
+                gap: 20px;
+                grid-template-columns: 125px 125px;
+
+                li {
+                    a {
+                        img {
+                            height: 28px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

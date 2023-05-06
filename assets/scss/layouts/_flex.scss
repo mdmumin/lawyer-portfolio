@@ -1,0 +1,43 @@
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.d-grid{
+    display: grid;
+}
+
+.flex-1{
+    flex: 1;
+}
+
+$values: flex-start, center, flex-end, space-between, space-evenly, space-around;
+$gaps: 10px, 15px, 20px, 25px, 30px;
+
+@each $value in $values{
+    .justify-content-#{$value}{
+        justify-content: $value;
+    }
+}
+
+@each $value in $values{
+    .justify-items-#{$value}{
+        justify-items: $value;
+    }
+}
+
+@each $value in $values{
+    .align-content-#{$value}{
+        justify-content: $value;
+    }
+}
+@each $value in $values{
+    .align-items-#{$value}{
+        align-items: $value;
+    }
+}
+
+@each $gap in $gaps{
+    .gap-#{$gap}{
+        gap: $gap;
+    }
+}

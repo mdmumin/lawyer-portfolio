@@ -1,4 +1,9 @@
+@import "./layouts/reset";
 @import "./layouts/headers";
+@import "./layouts/container";
+@import "./layouts/flex";
+@import "./layouts/common_class";
+
 @import "./pages/index";
 @import "./pages/about";
 @import "./pages/contact";
