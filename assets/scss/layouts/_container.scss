@@ -9,10 +9,12 @@
 
     @include xs() {
         width: 95%;
+        padding-left: 5px;
     }
 
     @include sm() {
         width: 576px;
+        padding-left: 5px;
     }
 
     @include md() {

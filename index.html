@@ -37,12 +37,15 @@
                     <img src="./assets/images/Logo.png" alt="header logo">
                 </div>
                 <nav class="nav flex-1">
-                    <button class="nav_toggle_btn"><i class="fa fa-align-justify"></i></button>
-                    <ul class="d-flex h-100 gap-15px justify-content-flex-end ">
-                        <li><a href="">Contact</a></li>
-                        <li><a href="">Testimonial</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Home</a></li>
+                    <button onclick="nav_links.classList.toggle('active')" class="nav_toggle_btn"><i
+                            class="fa fa-align-justify"></i></button>
+                    <ul id="nav_links" class="d-flex h-100 gap-15px justify-content-flex-end ">
+                        <li class="close_nav" onclick="nav_links.classList.toggle('active')"><a href="#"><i
+                                    class="fa fa-close"></i></a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Testimonial</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Home</a></li>
                     </ul>
                 </nav>
                 <div class="search">
@@ -51,7 +54,7 @@
             </div>
         </div>
     </header>
-    <section id="banner" class="d-none">
+    <section id="banner">
         <div class="container">
             <div class="banner_content">
                 <div class="content_top">
@@ -69,7 +72,7 @@
                         <li><img src="./assets/images/brand_logo1.png" alt="nick"></li>
                         <li><img src="./assets/images/brand_logo2.png" alt=""></li>
                         <li><img src="./assets/images/brand_logo3.png" alt="nick"></li>
-                        <li><img src="./assets/images/brand_logo4.png" alt=""></li>
+                        <li><img src="./assets/images/brand_logo4.png" alt="nick"></li>
                     </ul>
                 </div>
             </div>
@@ -196,7 +199,7 @@
     </section>
     <section id="questions">
         <div class="container">
-            <div class="question_content">
+            <div class="question_content ">
                 <div class="questions_left">
                     <h2>Complex Questions?</h2>
                     <p>

@@ -1,6 +1,8 @@
 #testimonial {
+    background-color: #F2F7FF;
+
     .testimonial_content {
-        background-color: #F2F7FF;
+
 
         h2 {
             font-family: $playfair;
@@ -9,6 +11,14 @@
             text-align: center;
             color: #2D2F30;
             padding-top: 61px;
+
+            @include xs() {
+                font-size: 25px;
+            }
+
+            @include sm() {
+                font-size: 30px;
+            }
 
         }
 
@@ -19,9 +29,27 @@
             align-content: flex-start;
             gap: 30px;
 
+            @include xs() {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 0;
+            }
+
             div {
                 .left_part_top {
                     background-color: $white;
+
+                    @include xs() {
+                        margin-top: 18px;
+                        margin-right: 16px;
+                    }
+
+                    @include sm() {
+                        margin-top: 20px;
+                        margin-right: 16px;
+                    }
+
 
                     h4 {
                         padding-top: 32px;
@@ -30,10 +58,32 @@
                         font-size: 18px;
                         text-align: center;
                         color: #151617;
+
+                        @include xs() {
+                            padding-top: 15px;
+
+                        }
+
+                        @include sm() {
+                            padding-top: 15px;
+
+                        }
                     }
 
                     p {
                         padding: 8px 32px 34px 32px;
+
+                        @include xs() {
+                            margin: 15px;
+
+                            @include xs() {
+                                font-size: 14px;
+                            }
+
+                            @include sm() {
+                                font-size: 14px;
+                            }
+                        }
                     }
 
                 }
@@ -45,6 +95,14 @@
                     gap: 16px;
                     padding-top: 30px;
                     padding-left: 160px;
+
+                    @include xs() {
+                        padding: 20px;
+                    }
+
+                    @include sm() {
+                        padding: 20px;
+                    }
 
                     .img {
 
@@ -76,6 +134,18 @@
 
                 .right_part_top {
                     background-color: $white;
+                    background-color: $white;
+
+                    @include xs() {
+                        margin-top: 20px;
+                        margin-right: 16px;
+                    }
+
+                    @include sm() {
+                        margin-top: 20px;
+                        margin-right: 16px;
+                    }
+
 
                     h4 {
                         padding-top: 32px;
@@ -84,10 +154,32 @@
                         font-size: 18px;
                         text-align: center;
                         color: #151617;
+
+                        @include xs() {
+                            padding-top: 15px;
+
+                        }
+
+                        @include sm() {
+                            padding-top: 15px;
+
+                        }
                     }
 
                     p {
                         padding: 8px 32px 34px 32px;
+
+                        @include xs() {
+                            margin: 15px;
+
+                            @include xs() {
+                                font-size: 14px;
+                            }
+
+                            @include sm() {
+                                font-size: 14px;
+                            }
+                        }
                     }
 
                 }
@@ -98,6 +190,14 @@
                     gap: 16px;
                     padding-top: 30px;
                     padding-left: 160px;
+
+                    @include xs() {
+                        padding: 20px;
+                    }
+
+                    @include sm() {
+                        padding: 20px;
+                    }
 
                     .img {
 
