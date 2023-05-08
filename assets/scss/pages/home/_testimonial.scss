@@ -14,10 +14,21 @@
 
             @include xs() {
                 font-size: 25px;
+                padding-top: 30px;
             }
 
             @include sm() {
                 font-size: 30px;
+                padding-top: 35px;
+            }
+            @include md() {
+                font-size: 35px;
+                padding-top: 40px;
+            }
+
+            @include lg() {
+                font-size: 40px;
+                padding-top: 45px;
             }
 
         }
@@ -30,9 +41,21 @@
             gap: 30px;
 
             @include xs() {
-                display: grid;
                 grid-template-columns: 1fr;
                 gap: 15px;
+                padding: 0;
+            }
+            @include sm() {
+                grid-template-columns: 1fr;
+                gap: 15px;
+                padding: 0;
+            }
+             @include md() {
+                gap: 15px;
+                padding: 0;
+            }
+             @include lg() {
+                gap: 20px;
                 padding: 0;
             }
 
@@ -48,6 +71,15 @@
                     @include sm() {
                         margin-top: 20px;
                         margin-right: 16px;
+                    }
+                     @include md() {
+                        margin-top: 18px;
+                        margin-left: 16px;
+                    }
+
+                    @include lg() {
+                        margin-top: 18px;
+                        margin-left: 16px;
                     }
 
 
@@ -68,22 +100,19 @@
                             padding-top: 15px;
 
                         }
+                        
                     }
 
                     p {
                         padding: 8px 32px 34px 32px;
 
-                        @include xs() {
-                            margin: 15px;
-
-                            @include xs() {
+                         @include xs() {
                                 font-size: 14px;
                             }
 
                             @include sm() {
-                                font-size: 14px;
+                                font-size: 15px;
                             }
-                        }
                     }
 
                 }
@@ -102,6 +131,15 @@
 
                     @include sm() {
                         padding: 20px;
+                    }
+                    @include md() {
+                        padding-left: 50px;
+                        padding-top: 20px;
+                    }
+
+                    @include lg() {
+                        padding-left: 60px;
+                        padding-top: 20px;
                     }
 
                     .img {
@@ -145,6 +183,16 @@
                         margin-top: 20px;
                         margin-right: 16px;
                     }
+                      @include md() {
+                        margin-top: 18px;
+                        margin-right: 16px;
+                    }
+
+                    @include lg() {
+                        margin-top: 18px;
+                        margin-right: 16px;
+                    }
+
 
 
                     h4 {
@@ -171,14 +219,9 @@
 
                         @include xs() {
                             margin: 15px;
-
-                            @include xs() {
-                                font-size: 14px;
-                            }
-
-                            @include sm() {
-                                font-size: 14px;
-                            }
+                        }
+                        @include sm() {
+                            font-size: 14px;
                         }
                     }
 
@@ -197,6 +240,14 @@
 
                     @include sm() {
                         padding: 20px;
+                    }
+                     @include md() {
+                        padding-left: 50px;
+                        padding-top: 20px;                      
+                    }
+                     @include lg() {
+                        padding-left: 60px;
+                        padding-top: 20px;
                     }
 
                     .img {

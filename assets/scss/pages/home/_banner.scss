@@ -2,7 +2,7 @@
     .banner_content {
         background-image: url("../images/banner.png");
         background-repeat: no-repeat;
-        background-position: 800px;
+        background-position: 750px;
         padding-top: 150px;
         padding-bottom: 46px;
 
@@ -10,6 +10,17 @@
             background-image: unset;
             padding-top: 40px;
         }
+        @include md() {
+            background-position: 310px;
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+        @include lg() {
+            background-position: 450px;
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+
 
         // margin-right: 50px;
 
@@ -35,6 +46,12 @@
                 @include sm() {
                     font-size: 30px;
                 }
+                @include md() {
+                    font-size: 50px;
+                }
+                @include lg() {
+                    font-size: 50px;
+                }
 
             }
 
@@ -56,6 +73,17 @@
                     margin-top: 30px;
                     margin-bottom: 20px;
                 }
+                @include md() {
+                    font-size: 20px;
+                    margin-top: 12px;
+                    margin-bottom: 25px;
+                }
+                @include lg() {
+                    font-size: 22px;
+                    margin-top: 12px;
+                    margin-bottom: 25px;
+                }
+
             }
 
             a {
@@ -70,6 +98,12 @@
                 }
                 @include sm(){
                     padding: 16px 30px;
+                }
+                @include md() {
+                    padding: 22px 28px;
+                }
+                @include lg() {
+                    padding: 22px 28px;
                 }
             }
         }
@@ -86,6 +120,14 @@
                 margin-top: 44px;
                 width: unset;
             }
+            @include md() {
+                margin-top: 60px;
+                width: unset;
+            }
+            @include lg() {
+                margin-top: 64px;
+                width: unset;
+            }
 
             h4 {
                 font-size: 22px;
@@ -95,12 +137,20 @@
                 font-weight: 400;
                 margin-bottom: 34px;
 
+                @include md(){
+                    font-size: 18px;
+                }
+                @include lg(){
+                    font-size: 18px;
+                }
+
             }
 
             ul {
                 display: grid;
                 gap: 20px;
                 grid-template-columns: 125px 125px;
+                margin-bottom: 80px;
 
                 li {
                     a {

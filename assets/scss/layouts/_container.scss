@@ -5,7 +5,7 @@
 .container {
     width: 1400px;
     margin: auto;
-     @include border(red);
+    //  @include border(red);
 
     @include xs() {
         width: 95%;
@@ -22,7 +22,7 @@
     }
 
     @include lg() {
-        width: 992;
+        width: 992px;
     }
 
     @include xl() {

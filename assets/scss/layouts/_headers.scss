@@ -4,6 +4,7 @@
 
 header {
     .header_content {
+
         .logo {
             img {
                 height: 36px;
@@ -12,11 +13,30 @@ header {
 
         nav {
             // border: $border;
-            padding: 32px 0px;
+            padding-top: 26px;
+            padding-bottom: 26px;
+            padding-left: 448px;
 
-            @include custom_responsive(0px, 767.9px) {
+            @include xs() {
                 position: relative;
-                padding: 10px;
+                padding-left: 20px;
+            }
+
+            @include sm() {
+                position: relative;
+                padding-left: 50px;
+            }
+
+            @include md() {
+                padding-left: 50px;
+                padding-top: 20;
+                padding-bottom: 20px;
+            }
+
+            @include lg() {
+                padding-left: 50px;
+                padding-top: 20;
+                padding-bottom: 20px;
             }
 
             .nav_toggle_btn {
@@ -34,6 +54,7 @@ header {
 
                 @include custom_responsive(0px, 767.9px) {
                     display: block;
+
                 }
             }
 
@@ -66,6 +87,14 @@ header {
                     }
                 }
 
+                @include md() {
+                    gap: 20px;
+                }
+
+                @include lg() {
+                    gap: 20px;
+                }
+
                 li {
                     position: relative;
 
@@ -93,7 +122,29 @@ header {
         }
 
         .search {
+            padding-top: 38px;
+            padding-bottom: 38px;
+            padding-right: 12px;
+            padding-left: 131px;
+
+            @include xs() {
+                padding-left: 30px;
+            }
+
+            @include sm() {
+                padding-left: 50px;
+            }
+            @include md() {
+                padding-left: 50px;
+            }
+
+            @include lg() {
+                padding-left: 70px;
+            }
+
             button {
+                background: transparent;
+                border: 0;
 
                 @include custom_responsive(0px, 767.9px) {
                     border: 0;
